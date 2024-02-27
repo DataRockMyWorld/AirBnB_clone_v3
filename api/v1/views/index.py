@@ -11,7 +11,7 @@ def get_status():
     """
     Route to return status in JSON format
     """
-    data = {"status": "ok"}
+    data = {"status": "OK"}
     response = jsonify(data)
     return response
 
@@ -31,7 +31,8 @@ def stats():
         "users": storage.count("User"),
     }
 
-    response = jsonify(data)
-    resp.status_code = 200
+    res = jsonify(data)
+    res.status_code = 200
 
-    return response
+    return res
+
