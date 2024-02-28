@@ -35,4 +35,3 @@ def stats():
     res.status_code = 200
 
     return res
-
